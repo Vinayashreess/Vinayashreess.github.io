@@ -821,7 +821,10 @@ input {
   }
 
 }
-
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
 /* for medium devices */
 @media screen and (max-width: 768px) {
   .container {
