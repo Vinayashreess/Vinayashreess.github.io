@@ -10,6 +10,18 @@
 // //     },
 // // });
 
+const themeToggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+themeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark-theme");
+    localStorage.setItem("theme", body.classList.contains("dark-theme") ? "dark" : "light");
+});
+
+// Load saved theme
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-theme");
+}
 
     
     
